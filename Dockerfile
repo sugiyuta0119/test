@@ -4,5 +4,6 @@ COPY package.json .
 RUN npm install &&\
     apk update &&\
     apk upgrade
+ENV TESTENV=sugita
 EXPOSE  8080
 CMD node app.js
